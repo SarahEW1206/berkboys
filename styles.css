@@ -1,0 +1,79 @@
+#header {
+    position: relative;
+    width: 100%;
+}
+
+#logo {
+    position: absolute;
+    z-index: 800;
+    top: 30px;
+    width: 60%;
+
+}
+
+#fbIcon {
+    position: absolute;
+    z-index: 799;
+    top: 30px;
+    right: 1rem;
+    width: 5%;  
+}
+
+
+#mainPic {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+
+}
+
+#menuBar {
+    position: absolute;
+    top: 75%;
+    z-index: 900;
+    width: 100%;
+    background-color: rgba(242, 235, 226, 1);
+}
+
+.menuItem {
+    display: inline-block;
+    width:  24%;
+    margin: 0;
+}
+
+.menuText {
+        font-size: .7rem;
+        font-weight: bold;
+        text-align: center;
+        padding-top: 20%;
+        padding-bottom: 20%;
+        line-height: .9;
+        margin: 0;
+        color: rgba(35, 31, 32, 1);
+        
+    }
+
+#storyBar {
+    width: 100%;
+    background-color: rgba(35, 31, 32, 1);
+}
+
+h3 {
+    font-size: 1.3rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: rgba(242, 235, 226, 1);
+}
+
+#storyBar p {
+    font-size: .8rem;
+    padding: 1rem;
+    color: rgba(242, 235, 226, 1);
+}
+
+.flavor {
+    margin: 30px;
+}
+
+

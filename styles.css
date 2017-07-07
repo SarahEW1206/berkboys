@@ -1,3 +1,20 @@
+html,body {
+    height:100%;
+    width: 100%;
+    padding:0;
+    margin:0;
+    /*background-color: lightgreen;*/
+}
+
+p {
+    font-size: .9rem;
+    letter-spacing: 1px;
+    line-height: 1.2rem;
+    font-family: 'Open Sans', Arial, sans-serif;
+    font-weight: 100;
+    margin: 0;
+}
+
 #header {
     position: relative;
     width: 100%;
@@ -15,24 +32,28 @@
     position: absolute;
     z-index: 799;
     top: 30px;
-    right: 1rem;
+    right: 20px;
     width: 5%;  
 }
 
 
 #mainPic {
     position: relative;
-    z-index: 1;
+    z-index: 0;
     width: 100%;
 
 }
 
 #menuBar {
     position: absolute;
-    top: 75%;
+    top: 70%;
     z-index: 900;
     width: 100%;
-    background-color: rgba(242, 235, 226, 1);
+    background-color: rgba(242, 235, 226, .8);
+}
+
+a {
+    text-decoration: none;
 }
 
 .menuItem {
@@ -43,37 +64,128 @@
 
 .menuText {
         font-size: .7rem;
-        font-weight: bold;
+        font-weight: 700;
         text-align: center;
         padding-top: 20%;
         padding-bottom: 20%;
         line-height: .9;
         margin: 0;
         color: rgba(35, 31, 32, 1);
-        
+        font-family: 'Coustard', serif;   
     }
 
 #storyBar {
+    position: relative;
+    display: inline-block;
+    z-index: 100;
     width: 100%;
+    margin-top: -2%;
     background-color: rgba(35, 31, 32, 1);
 }
 
 h3 {
     font-size: 1.3rem;
-    padding-top: 1rem;
+    /*padding-top: 1rem;*/
     padding-left: 1rem;
     padding-right: 1rem;
+    margin-bottom: 0;
     color: rgba(242, 235, 226, 1);
+    font-family: 'Coustard', serif;
 }
 
 #storyBar p {
-    font-size: .8rem;
+    padding: .5rem 1rem 1rem 1rem;
+    color: rgba(242, 235, 226, 1);
+    margin: 0;
+    
+    
+}
+
+#flavorIntro {
+    background-color: rgba(12, 140, 68, 1);
+    width: 100%;
+    display: inline-block;
+}
+
+#flavorIntro p {
+    padding: .5rem 1rem 1rem 1rem;
+    color: rgba(242, 235, 226, 1);
+    margin: 0;
+
+}
+
+#orderInfo {
+    display: inline-block;
+    background-color: rgba(72, 146, 206, 1);
+    width: 100%;
+}
+
+#orderInfo p {
     padding: 1rem;
     color: rgba(242, 235, 226, 1);
+    margin-bottom: 0;
+
 }
 
 .flavor {
-    margin: 30px;
+    margin: 0;
 }
+
+#partyDiv {
+    width: 100%;
+    background-color: rgba(255, 100, 164, 1)
+}
+
+#partySvg {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+}
+
+
+@media(min-width: 500px) {
+    #fbIcon {
+    right: 30px;
+  
+}
+    .flavor {
+        width: 49%;
+    }
+
+    .menuText {
+        font-size: .9rem;
+    }
+}
+
+@media(min-width: 700px) {
+    #logo {
+        width: 50%;
+    }
+
+    #menuBar {
+        top: 65%;
+    }
+
+    .menuText {       
+        padding-top: 15%;
+        padding-bottom: 15%;
+    }
+
+    #storyBar {
+    margin-top: -10%;
+    }
+
+    .flavor {
+        width: 32%;
+    }
+}
+
+@media(min-width: 900px) {
+        .flavor {
+        width: 24%;
+    }
+}
+
+
 
 

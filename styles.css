@@ -45,12 +45,12 @@ p {
 }
 
 #menuBar {
-    position: absolute;
-    top: 63%;
-    right: 0;
+    position: relative;
     z-index: 900;
-    width: 35%;
-    background-color: rgba(242, 235, 226, .8);
+    width: 100%;
+    background-color: rgba(242, 235, 226, 1);
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 a {
@@ -202,13 +202,7 @@ margin: 20px;
         width: 49%;
     }
 
-    .menuItem {
-        width: 166px;
-    }
 
-    .menuText {
-        font-size: .9rem;
-    }
 }
 
 @media(min-width: 700px) {
@@ -216,27 +210,17 @@ margin: 20px;
         width: 50%;
     }
 
-    .menuItem {
-        width: 230px;
-    }
-
-
-    .menuText {       
-        padding-top: 10%;
-        padding-bottom: 10%;
-    }
-
     #storyBar {
     margin-top: -10%;
     }
 
-    #menuBar {
-    top: 70%;
-}
-
-
     .flavor {
         width: 32%;
+    }
+
+    .menuText {
+        font-size: 1rem;
+        padding: .25rem;
     }
 }
 
@@ -244,29 +228,16 @@ margin: 20px;
         .flavor {
         width: 24%;
     }
-
-    .menuItem {
-        width: 300px;
-    }
-
-    .menuText {
-        font-size: 1rem;
-    }
-
 }
 
 @media(min-width: 1100px) {
 #mainPic {
-margin-top: -10%;
+margin-top: -5%;
 }
 
 #storyBar {
-    margin-top: -15%;
+    margin-top: -20%;
     }
-
-        #menuBar {
-    top: 60%;
-}
 
 }
 

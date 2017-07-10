@@ -21,6 +21,11 @@
     <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi"
         crossorigin="anonymous">-->
 
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js " integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7 "
+        + crossorigin="anonymous "></script>
+
+    <script src="scroll.js"></script>-->
+
     <!--Other stylesheets-->
     <link rel="stylesheet" href="styles.css">
 
@@ -34,17 +39,35 @@
 
     <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
 
-
+    <!-- SMOOTH SCROLL -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>
+        $(function () {
+            $('a[href*=#]:not([href=#])').click(function () {
+                if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+                    var target = $(this.hash);
+                    target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                    if (target.length) {
+                        $('html,body').animate({
+                            scrollTop: target.offset().top
+                        }, 500);
+                        return false;
+                    }
+                }
+            });
+        });
+    </script>
+    <!-- End of SMOOTH SCROLL -->
 
 
 
 
 </head>
 
-<div id="header">
+<div id="header" name="top">
     <img id="logo" src="file:///Users/sarahwaldie/Desktop/BBWEB/images/Logo.svg" />
 
-    <img id="fbIcon" src="file:///Users/sarahwaldie/Desktop/BBWEB/images/fb.svg" />
+    <a href="https://www.facebook.com/berkboys/" target="_blank"> <img id="fbIcon" src="file:///Users/sarahwaldie/Desktop/BBWEB/images/fb.svg" /></a>
 
 
     <div id="menuBar">
@@ -101,7 +124,7 @@
 
 </div>
 
-<div id="flavorIntro">
+<div id="flavorIntro" name="flavor">
     <h3>Check out our flavors below!</h3>
     <a target="_blank" href="file:///Users/sarahwaldie/Desktop/BBWEB/IngredientsAllergens.pdf">
         <p>Click here for ingredients and allergen info.</p>
@@ -133,7 +156,7 @@
     <img id="partySvg" src="file:///Users/sarahwaldie/Desktop/BBWEB/images/party.svg">
 </div>
 
-<a href="#header">
+<a href="#top">
     <div id="goUp">
         <p>Back to Top</p>
     </div>
@@ -149,11 +172,10 @@
 </html>
 <!-- jQuery first, then Tether, then Bootstrap JS. -->
 
-<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js " integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7 "
-    + crossorigin="anonymous "></script>
+
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js " integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8 "
     + crossorigin="anonymous "></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js " integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK "
-    + crossorigin="anonymous "></script>-->
+    + crossorigin="anonymous "></script>
